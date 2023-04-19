@@ -1,0 +1,9 @@
+h3{
+    text-align: center;
+}
+
+img{
+    display: flex;
+    margin-left: 50px;
+    width: 400px;
+}
