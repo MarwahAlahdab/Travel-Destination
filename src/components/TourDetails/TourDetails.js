@@ -41,8 +41,10 @@ const [showMore, setShowMore] = useState(false);
           <Card.Img variant="top" src={selectedItem.image} />
           <Card.Body>
             <Card.Title><h2>This city name is {selectedItem.name}</h2></Card.Title>
+
+            <h4> Price = {selectedItem.price}</h4>
             <Card.Text>
-            <h4>Price = {selectedItem.price}</h4>
+          
             {showMore ? selectedItem.info : `${selectedItem.info.slice(0, selectedItem.info.indexOf('.', selectedItem.info.indexOf('.') + 1))}...`}
            
   

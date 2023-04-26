@@ -39,7 +39,7 @@ function Tour(props) {
           <Card.Body>
             <Card.Title>{props.name}</Card.Title>
             <Card.Text>
-              <h2> </h2>
+             
             </Card.Text>
           </Card.Body>
         </Card>
