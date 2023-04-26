@@ -24,11 +24,10 @@ return(
 return(
 
 
- <Link to={`/city/${tour.id}`}
- >
+ <Link to={`/city/${tour.id}` }    key={tour.id} >
  <Tour 
  tour={tour}
-   key={tour.id}
+
    name={tour.name}
    image={tour.image}
    tourId={tour.id} // pass the Id as a props
