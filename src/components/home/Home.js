@@ -7,6 +7,7 @@ import DataJson from "../../data/db.json";
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Tours from '../tours/Tours';
+import Tour from '../tours/Tour/Tour';
 
 function Home(){
 
@@ -17,8 +18,8 @@ function Home(){
 
 <Header></Header>
 
-
 <Tours data={DataJson}></Tours>
+{/* <Tour data={DataJson}></Tour> */}
 <Footer></Footer>
     </>
 

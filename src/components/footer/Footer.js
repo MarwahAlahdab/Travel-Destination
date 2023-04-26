@@ -10,11 +10,12 @@ function Footer(){
     
     return(
     <>
+    <div className="footer">
     <a href="#">Facebook</a><br></br>
     <a href="#">Instagram</a>
 
     <p>Author: Marwa</p>
-
+    </div>
     </>
 
 
