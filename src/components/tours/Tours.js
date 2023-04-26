@@ -6,25 +6,34 @@
 // Your <div> should only contain the name and an image for each tour.
 
 import ToursStyle from "./Tours.css"
+import Tour from "./Tour/Tour.js"
+import {  Link } from 'react-router-dom';
+import TourDetails from '../TourDetails/TourDetails';
 
 
 function Tours(props){
 
     console.log(props)
-    return(
+
+return(
     <>
+
+    
    {props.data.map(tour =>{
 
 return(
-<div key={tour.id}>
-    <h3>{tour.name}</h3>
-<img src={tour.image} alt=""
-></img><hr></hr>
-
-</div>
 
 
-
+ <Link to={`/city/${tour.id}`}
+ >
+ <Tour 
+ tour={tour}
+   key={tour.id}
+   name={tour.name}
+   image={tour.image}
+   tourId={tour.id} // pass the Id as a props
+ />
+</Link>
 
 )
 
@@ -39,8 +48,20 @@ return(
 
     )
 
+
+
 }
 
 
 
 export default Tours;
+
+
+
+
+
+
+
+
+
+
